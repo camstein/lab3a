@@ -35,8 +35,8 @@ map.addEventListener("draw:created", function(e) {
 function createFormPopup() {
     var popupContent =
         '<form>' +
+        'User\'s Name:<br><input type="text" id="input_name"><br>' +
         'Description:<br><input type="text" id="input_desc"><br>' +
-        'Name of Point or Polygon:<br><input type="text" id="input_name"><br>' +
         '<input type="button" value="Submit" id="submit">' +
         '</form>'
     drawnItems.bindPopup(popupContent).openPopup();
