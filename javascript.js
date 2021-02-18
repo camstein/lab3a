@@ -5,7 +5,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: '{Your Access Token Goes Here}'
+    accessToken: 'pk.eyJ1IjoiY2FtZXJvbnN0ZWluZXIzMSIsImEiOiJja2szcWV3aG4wMXJmMndsaGV0Mm9qaDNrIn0.-HtiggKqG14xmsRD2uH2PQ'
 }).addTo(map);
 
 var drawnItems = L.featureGroup().addTo(map);
@@ -35,7 +35,7 @@ map.addEventListener("draw:created", function(e) {
 function createFormPopup() {
     var popupContent =
         '<form>' +
-        'User\'s Name:<br><input type="text" id="input_name"><br>' +
+        'Title:<br><input type="text" id="input_name"><br>' +
         'Description:<br><input type="text" id="input_desc"><br>' +
         '<input type="button" value="Submit" id="submit">' +
         '</form>'
