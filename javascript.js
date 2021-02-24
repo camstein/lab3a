@@ -35,7 +35,7 @@ map.addEventListener("draw:created", function(e) {
 function createFormPopup() {
     var popupContent =
         '<form>' +
-        'Title:<br><input type="text" id="input_name"><br>' +
+        'Name:<br><input type="text" id="input_name"><br>' +
         'Description:<br><input type="text" id="input_desc"><br>' +
         '<input type="button" value="Submit" id="submit">' +
         '</form>'
